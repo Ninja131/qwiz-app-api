@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background_color: #131a1d;
+    --text_color: #0a3146;
+    --primary700: #0a496b;
+    --primary500: #1383bf;
+    --primary100: #e7f7ff;
+}
+
+body{
+    font-family: "Montserrat";
+    background-color: var(--background_color);
+    color: var(--text_color);
+}
+
+
+
+
+
+
+
+
+.container{
+    max-width: 550px;
+    margin: 150px auto 0px auto;
+    padding: 2rem 2rem;
+    background-color: aliceblue;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.startSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button{
+    outline: none;
+    background-color:var(--primary500);
+    color: var(--primary100);
+    border: none;
+    padding: 16px 16px;
+    border-radius: 34px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ button:hover{
+    background-color: #0f6391;
+ }
+
+
+ ul{
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ul li{
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    background-color: #c9d8dc;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: var(--primary700);
+    
+}
+
+.question{
+    margin-top: 16px;
+}
+
+.answers{
+    border: 2px solid rgb(169, 213, 252);
+    padding: 1rem 1rem;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.endSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.BackgroundImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: spin 15s linear infinite;
+}
+
+.ScoreIcon{
+    z-index: 1;
+    font-size: 40px;
+    font-weight: 600; 
+    color: var(--primary100);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+.disable{
+    background-color: rgb(186, 186, 186);
+}
+
+.hide{
+    display: none;
+}
+
+.CurrentQuestion{
+    background-color: var(--primary500);
+    color: var(--primary100);
+    border: none;
+
+}
+
+
+
+
+.notTrue{
+    background-color: rgb(215, 12, 12);
+    color: var(--primary100);
+    border: none;
+}
+
+.true{
+    background-color: rgb(15, 192, 53);
+    color: var(--primary100);
+    border: none;
+}
